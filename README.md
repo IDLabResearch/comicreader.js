@@ -2,7 +2,7 @@
 
 Comicreader.js is a JavaScript library designed to aid the support of digital comics in the EPUB format. It offers the following features.
 
-- Automatic zooming in on the panel that is currently being read.
+- Automatic zooming in on the panel that is currently being read, which also results in a reading experience that is adapted to the screen size of the used device.
 - Moving to the next panel when the current panel is read.
 - Showing different layers of the panel in the correct sequence.
 - Support audio as a 'layer' of a panel.
@@ -18,6 +18,9 @@ Comicreader.js is a JavaScript library designed to aid the support of digital co
 ### Example ###
 
 In the folder `example` you can find the source of an example EPUB file showcasing the use of this library. Besides offering the features of an enhanced (digital) comic, it also supports reading the comic when JavaScript is not available on the reader.
+
+Aside from the use of Comicreader.js, we also incorporated metadata using the ontology [Dicera](http://semweb.mmlab.be/ns/dicera).
+
 
 ### License ###
 
