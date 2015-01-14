@@ -12,7 +12,7 @@ Comicreader.js is a JavaScript library designed to aid the support of digital co
 
 ### Dependencies ###
 
-## Example ###
+### Example ###
 
 ### License ###
 
