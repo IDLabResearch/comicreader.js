@@ -69,13 +69,6 @@ function showNextPanel(panel){
 	//]]>
 }
 
-// change language
-//function changeLanguage(panel, language){
-//	if (current_language != language) {
-//		changeLanguagePanel(panel, language);
-//	}
-//}
-
 //change language of panel
 function changeLanguagePanel(panel, language){
 	$('div.text_obj > span[xml\\:lang=' + language + ']').show();
