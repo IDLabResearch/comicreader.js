@@ -12,7 +12,12 @@ Comicreader.js is a JavaScript library designed to aid the support of digital co
 
 ### Dependencies ###
 
+- [jQuery](http://jquery.com/)
+- [Zoomooz](http://jaukia.github.io/zoomooz/)
+
 ### Example ###
+
+In the folder `example` you can find the source of an example EPUB file showcasing the use of this library. Besides offering the features of an enhanced (digital) comic, it also supports reading the comic when JavaScript is not available on the reader.
 
 ### License ###
 
