@@ -1,6 +1,6 @@
-## Comicreader.js ##
+## comicreader.js ##
 
-Comicreader.js is a JavaScript library designed to aid the support of digital comics in the EPUB format. It offers the following features.
+comicreader.js is a JavaScript library designed to aid the support of digital comics in the EPUB format. It offers the following features.
 
 - Automatic zooming in on the panel that is currently being read, which also results in a reading experience that is adapted to the screen size of the used device.
 - Moving to the next panel when the current panel is read.
@@ -19,7 +19,7 @@ Comicreader.js is a JavaScript library designed to aid the support of digital co
 
 In the folder `example` you can find the source of an example EPUB file showcasing the use of this library. Besides offering the features of an enhanced (digital) comic, it also supports reading the comic when JavaScript is not available on the reader.
 
-Aside from the use of Comicreader.js, we also incorporated metadata using the ontology [Dicera](http://semweb.mmlab.be/ns/dicera).
+Aside from the use of comicreader.js, we also incorporated metadata using the ontology [Dicera](http://semweb.mmlab.be/ns/dicera).
 
 
 ### License ###
@@ -37,6 +37,6 @@ The people involved are:
 - Erik Mannens (Ghent University - iMinds - MMLab)
 - Rik Van de Walle (Ghent University - iMinds - MMLab)
 
-We chose to make Comicreader.js open source under GPL Version 3 license because we believe this will lead it to its full potential, and be of much more value to the Electronic Publishing community.
+We chose to make comicreader.js open source under GPL Version 3 license because we believe this will lead it to its full potential, and be of much more value to the Electronic Publishing community.
 
 So in short, you are free to use and modify Comicreader.js for non-commercial purposes, as long as you make your stuff open source as well and you properly credit us. This is most conveniently done by linking back to this repository.
