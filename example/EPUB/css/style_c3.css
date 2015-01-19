@@ -1,0 +1,63 @@
+@import url("main.css");
+
+#panel13, #panel13_fallback {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	z-index: 1;
+}
+
+#panel14, #panel14_fallback {
+	position: absolute;
+	left: 640px;
+	top: 0px;
+	z-index: 2;
+}
+
+.character_dracula {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	z-index: 2;
+	display:none;
+}
+
+.balloon {
+	left: 0px;
+	top: 0px;
+}
+
+.effect {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	z-index: 5;
+	display: none;
+}
+
+
+.text_obj {
+	font-size:70px;
+	width:50px;
+}
+
+.language_button {
+	z-index:10;
+}
+
+#panel14_text_obj {
+	position: absolute;
+	left: 310px;
+	top: 115px;
+}
+
+#panel14_text_en {
+	display:none;
+}
+
+#panel14_effect {
+	position: absolute;
+	left: 50px;
+	top: 200px;
+	z-index: 6;
+}

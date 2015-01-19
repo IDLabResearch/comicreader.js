@@ -1,0 +1,199 @@
+@import url("main.css");
+
+#panel1 {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+}
+
+#panel1_fallback {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+}
+
+#panel2 {
+	position: absolute;
+	left: 620px;
+	top: 0px;
+}
+
+#panel2_fallback {
+	position: absolute;
+	left: 15px;
+	top: 0px;
+}
+
+#panel3 {
+	position: absolute;
+	left: 0px;
+	top: 420px;
+}
+
+#panel3_fallback {
+	position: absolute;
+	left: 0px;
+	top: 15px;
+}
+
+#panel4 {
+	position: absolute;
+	left: 620px;
+	top: 420px;
+}
+
+#panel4_fallback {
+	position: absolute;
+	left: 15px;
+	top: 15px;
+}
+
+#panel5 {
+	position: absolute;
+	left: 0px;
+	top: 840px;
+}
+
+#panel5_fallback {
+	position: absolute;
+	left: 0px;
+	top: 30px;
+}
+
+#panel6 {
+	position: absolute;
+	left: 620px;
+	top: 840px;
+}
+
+#panel6_fallback {
+	position: absolute;
+	left: 30px;
+	top: 30px;
+}
+
+#panel1_text_a #panel1_text_b {
+	top: 0px;
+	left: 0px;	
+}
+
+#panel1_text_a_obj {
+	position: absolute;
+	left: 165px;
+	top: 160px;
+}
+
+#panel1_text_b_obj {
+	position: absolute;
+	left: 310px;
+	top: 180px;
+}
+
+#panel1_text_a_en {
+	display:none;
+}
+
+#panel1_text_b_en {
+	display:none;
+}
+
+#panel2_text_a_obj {
+	position: absolute;
+	left: 170px;
+	top: 150px;
+	font-size:30px;
+}
+
+#panel2_text_b_obj {
+	position: absolute;
+	left: 390px;
+	top: 170px;
+	font-size:28px;
+	white-space: nowrap;
+}
+
+#panel2_text_a_en {
+	display:none;
+	font-size: 25px;
+}
+
+#panel2_text_b_en {
+	display:none;
+	font-size: 24px;
+}
+
+#panel3_text_a_obj {
+	position: absolute;
+	left: 165px;
+	top: 160px;
+	font-size:15px;
+}
+
+#panel3_text_c_obj {
+	position: absolute;
+	left: 360px;
+	top: 170px;
+	font-size:15px;
+}
+
+#panel3_text_a_en {
+	display:none;
+	font-size:17px;
+}
+
+#panel3_text_c_en {
+	display:none;
+	font-size:17px;
+}
+
+#panel4_text_b_obj {
+	position: absolute;
+	left: 220px;
+	top: 175px;
+	font-size:20px;
+}
+
+#panel4_text_c_obj {
+	position: absolute;
+	left: 390px;
+	top: 310px;
+	font-size:20px;
+}
+
+#panel4_text_b_en {
+	display:none;
+}
+
+#panel4_text_c_en {
+	display:none;
+}
+
+#panel5_text_a_obj {
+	position: absolute;
+	font-size:18px;
+	left: 150px;
+}
+
+#panel5_text_a_nl {
+	position: absolute;
+	top: 137px;
+	
+}
+
+#panel5_text_a_en {
+	position: absolute;
+	display:none;
+	top: 155px;
+	left: -5spx;
+}
+
+#panel6_text_a_obj {
+	position: absolute;
+	left: 200px;
+	top: 125px;
+	font-size:20px;
+}
+
+#panel6_text_a_en {
+	display:none;
+}

@@ -1,0 +1,50 @@
+.panel {
+	height: 400px;
+	width: 600px;
+}
+
+.background {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	z-index: 1;
+	display:none;
+}
+
+.character {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	z-index: 2;
+	display:none;
+}
+
+.balloon {
+	position: absolute;
+	z-index: 3;
+	display:none;
+}
+
+.text_container {
+	display: none;
+	z-index: 4;
+}
+
+.text_obj {
+	font-family:"Arial";
+	font-size:40px;
+	z-index: 4;
+ 	width:100px;
+}
+
+.language_button {
+	float: right;
+}
+
+.audio {
+	display:none;
+}
+
+.metadata {
+	display:none;
+}

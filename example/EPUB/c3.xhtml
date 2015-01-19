@@ -1,0 +1,151 @@
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+    <head>
+        <title>Halloween Trouble</title>
+        <link type="text/css" rel="stylesheet" href="css/style_c3.css"/>      
+		<script src="./script/jquery.js"></script>
+		<script src="./script/jquery.zoomooz.min.js"></script>
+		<script src="./script/comicreader.js"></script>
+    </head>
+    
+    <body vocab="http://semweb.mmlab.be/ns/dicera#">
+    	<button type="button" class="language_button"
+		onclick="changeLanguageAllPanels('en')">EN</button>
+		<button type="button" class="language_button"
+		onclick="changeLanguageAllPanels('nl')">NL</button>
+		
+		<div id="page3" class="page" typeof="Page" resource="#page3">
+			<div class="metadata">
+				<span property="hasReadingOrder">3</span>
+				<span property="has" resource="#panel13"></span>
+				<span property="has" resource="#panel14"></span>
+			</div>
+		
+			<div id="panel13_fallback" class="panel_fallback">
+				<img src="page3/panel1/fallback.png" alt="panel 13 fallback image"/>
+			</div>
+
+ 			<div id="panel13" class="panel" data-hasReadingOrder="1" typeof="Panel" resource="#panel13"> 	
+ 				<div class="metadata">
+ 					<span property="hasReadingOrder">1</span>
+					<span class="metadata" property="has" resource="#layer69"></span>
+					<span class="metadata" property="has" resource="#layer70"></span>
+ 				</div>
+ 				
+				<div id="panel13_background" class="background" typeof="Layer" resource="#layer69">
+				<span class="metadata" property="has" resource="#location_earth"></span>
+					<img src="page3/panel1/background.png" alt="background image" onclick="showCharacterLayers('#panel13', event)"/>
+				</div>
+		
+				<div id="panel13_character" class="character" typeof="Layer" resource="#layer70">
+					<span class="metadata" property="has" resource="#character_pumpkinman"></span>
+					<img src="page3/panel1/character.png" alt="character_pumpkinman image" onclick="moveLayer('#panel13_character', '#panel13')"/>
+				</div>
+ 			</div>
+ 			
+ 			<div id="panel14_fallback" class="panel_fallback">
+				<img src="page3/panel1/fallback.png" alt="panel 14 fallback image"/>
+			</div>
+ 			
+ 			<div id="panel14" class="panel" data-hasReadingOrder="2" typeof="Panel" resource="#panel14"> 	
+ 				<div class="metadata">
+ 					<span property="hasReadingOrder">2</span>
+					<span property="has" resource="#layer71"></span>
+					<span property="has" resource="#layer72"></span>
+					<span property="has" resource="#layer73"></span>
+					<span property="has" resource="#layer74"></span>
+					<span property="has" resource="#layer75"></span>
+					<span property="has" resource="#layer76"></span>
+					
+					<div typeof="Balloon" resource="#balloon14"></div>
+					
+					<div resource="#character_pumpkinman">
+							<span property="has" resource="#balloon14"></span>
+						</div>
+					
+					<div typeof="Effect" resource="#effect14">
+						<span property="rdfs:label">ZAP!</span>
+					</div>
+ 				</div>
+ 				
+				<div id="panel14_background" class="background" typeof="Layer" resource="#layer71">
+					<span class="metadata" property="has" resource="#location_earth"></span>
+					<img src="page3/panel2/background.png" alt="background image" onclick="showCharacterLayers('#panel14', event)"/>
+				</div>
+		
+				<div id="panel14_character1" class="character" typeof="Layer" resource="#layer72">
+					<span class="metadata" property="has" resource="#character_pumpkinman"></span>
+					<img src="page3/panel2/character1.png" alt="character_pumpkinman image" onclick="moveLayer('#panel14_character1', '#panel14')"/>
+				</div>
+				
+				<div id="panel14_character2" class="character_dracula" typeof="Layer" resource="#layer73">
+					<span class="metadata" property="has" resource="#character_dracula"></span>
+					<img src="page3/panel2/character2.png" alt="character_dracula image" onclick="hideDracula()"/>
+				</div>
+				
+				<div id="panel14_balloon" class="balloon" typeof="Layer" resource="#layer74">
+					<span class="metadata" property="has" resource="#balloon14"></span>
+					<img src="page3/panel2/balloon.png" alt="balloon image" onclick=""/>
+				</div>
+				
+				<div id="panel14_text" class="text_container" onclick="showEffectLayers('#panel14')" typeof="Layer" resource="#layer75">
+					<span class="metadata" property="has" resource="#panel1_4text_obj"></span>
+					
+					<div id="panel14_text_obj" class="text_obj" typeof="Text" resource="#panel14_text_obj">
+						<span class="metadata" property="isSaidThrough" resource="#balloon14"></span>
+						<span id="panel14_text_nl" class="text_nl" property="says" xml:lang="nl">?</span>
+						<span id="panel14_text_en" class="text_en" property="says" xml:lang="en">?!</span>
+					</div>
+				</div>
+				
+				<div id="panel14_effect" class="effect" onclick="completePageRead(event)" typeof="Layer" resource="#layer76">
+					<span class="metadata" property="has" resource="#effect14"></span>
+					<img src="page3/panel2/effect.png" alt="effect image" onclick=""/>
+				</div>
+ 			</div>
+		</div>
+        
+        <script>
+			var layerPositionIndex = 0;
+			var maxLayerPosition = 2;
+			var moveLength = 155;
+			var firstPanel = '#panel13';
+			var lastPanel = '#panel14';
+			nextPanels['#panel13'] = '#panel14';
+			var dracula_hidden_again = false;
+						
+			function moveLayer(layer, panel) {
+				//<![CDATA[
+				if (layerPositionIndex < maxLayerPosition) {
+					$(layer).css('left', function(index, oldValue) {
+							oldLeft = oldValue.substring(0, oldValue.length-2);
+							newValue = +oldLeft + +moveLength + "px";
+							return newValue;
+						});
+						
+					layerPositionIndex++;
+				} else {
+					if (panel == '#panel14') {
+						if (dracula_hidden_again) {
+							showBalloonLayers(panel);
+							showTextLayers(panel);
+						} else {
+							$('#panel14_character2').fadeIn(2000);
+						}
+					} else {
+						layerPositionIndex = 0;
+						showNextPanel(nextPanels[panel]);
+					}
+				}
+				//]]>
+			}
+			
+			function hideDracula(){
+				$('#panel14_character2').fadeOut(2000);
+				dracula_hidden_again = true;
+			}
+
+			window.onload=start;
+    	</script>
+    </body>
+</html>

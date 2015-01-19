@@ -1,0 +1,288 @@
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+    <head>
+        <title>The Evolution</title>
+        <link type="text/css" rel="stylesheet" href="css/style_c2.css"/>      
+		<script src="./script/jquery.js"></script>
+		<script src="./script/jquery.zoomooz.min.js"></script>
+		<script src="./script/comicreader.js"></script>
+    </head>
+    
+    <body vocab="http://semweb.mmlab.be/ns/dicera#">
+    	<button type="button" class="language_button"
+		onclick="changeLanguageAllPanels('en')">EN</button>
+		<button type="button" class="language_button"
+		onclick="changeLanguageAllPanels('nl')">NL</button>
+		
+		<div id="page2" class="page" typeof="Page" resource="#page2">
+			<div class="metadata">
+				<span property="hasReadingOrder">2</span>
+				<span property="has" resource="#panel7"></span>
+				<span property="has" resource="#panel8"></span>
+				<span property="has" resource="#panel9"></span>
+				<span property="has" resource="#panel10"></span>
+				<span property="has" resource="#panel11"></span>
+				<span property="has" resource="#panel12"></span>
+			</div>
+		
+			<div id="panel7_fallback" class="panel_fallback">
+				<img src="page2/panel1/fallback.png" alt="panel 7 fallback image"/>
+			</div>
+
+ 			<div id="panel7" class="panel" data-hasReadingOrder="1" typeof="Panel" resource="#panel7"> 
+ 				<div class="metadata">
+					<span property="hasReadingOrder">1</span>	
+					<span property="has" resource="#layer45"></span>
+					<span property="has" resource="#layer46"></span>
+					<span property="has" resource="#layer47"></span>
+					<span property="has" resource="#layer48"></span>
+ 				
+ 					<div class="metadata" typeof="Caption" resource="#caption7"></div>
+ 				</div>
+ 						
+				<div id="panel7_background" class="background" typeof="Layer" resource="#layer45">
+					<span class="metadata" property="has" resource="#location_earth"></span>
+					<img src="page2/panel1/background.png" alt="background image" onclick="showCharacterLayers('#panel7', event)"/>
+				</div>
+		
+				<div id="panel7_character" class="character" typeof="Layer" resource="#layer46">
+					<span class="metadata" property="has" resource="#character_cell"></span>
+					<img src="page2/panel1/character.png" alt="character_cell image" onclick="showBalloonLayers('#panel7')"/>
+				</div>
+		
+				<div id="panel7_caption" class="balloon" typeof="Layer" resource="#layer47">
+					<span class="metadata" property="has" resource="#caption7"></span>
+					<img src="page2/panel1/caption.png" alt="caption image" onclick="showTextLayers('#panel7')"/>
+				</div>
+		
+				<div id="panel7_text" class="text_container" onclick="showNextPanel('#panel8', event)" typeof="Layer" resource="#layer48">
+					<span class="metadata" property="has" resource="#panel7_text_obj"></span>
+					
+					<div id="panel7_text_obj" class="text_obj" typeof="Text" resource="#panel7_text_obj">
+						<span class="metadata" property="isSaidThrough" resource="#caption7"></span>
+						<span id="panel7_text_nl" property="says" xml:lang="nl">Hoe het begon ...</span>
+						<span id="panel7_text_en" property="says" xml:lang="en">How it began ...</span>
+					</div>
+				</div>
+ 			</div>
+ 			
+ 			<div id="panel8_fallback" class="panel_fallback">
+				<img src="page2/panel2/fallback.png" alt="panel 8 fallback image"/>
+			</div>
+
+ 			<div id="panel8" class="panel" data-hasReadingOrder="2" typeof="Panel" resource="#panel8"> 
+ 				<div class="metadata">	
+					<span property="hasReadingOrder">2</span>
+					<span class="metadata" property="has" resource="#layer49"></span>
+					<span class="metadata" property="has" resource="#layer50"></span>
+					<span class="metadata" property="has" resource="#layer51"></span>
+					<span class="metadata" property="has" resource="#layer52"></span>
+				
+					<div class="metadata" typeof="Caption" resource="#caption8"></div>
+				</div>
+ 						
+				<div id="panel8_background" class="background" typeof="Layer" resource="#layer49">
+					<span class="metadata" property="has" resource="#location_earth"></span>
+					<img src="page2/panel2/background.png" alt="background image" onclick="showCharacterLayers('#panel8', event)"/>
+				</div>
+		
+				<div id="panel8_character" class="character" typeof="Layer" resource="#layer50">
+					<span class="metadata" property="has" resource="#character_guy"></span>
+					<span class="metadata" property="hasObject" resource="#object_glass"></span>
+					<img src="page2/panel2/character.png" alt="character_cell image" onclick="showBalloonLayers('#panel8')"/>
+				</div>
+		
+				<div id="panel8_caption" class="balloon" typeof="Layer" resource="#layer51">
+					<span class="metadata" property="has" resource="#caption8"></span>
+					<img src="page2/panel2/caption.png" alt="caption image" onclick="showTextLayers('#panel8')"/>
+				</div>
+		
+				<div id="panel8_text" class="text_container" onclick="showNextPanel('#panel9', event)" typeof="Layer" resource="#layer52">
+					<span class="metadata" property="has" resource="#panel8_text_obj"></span>
+					
+					<div id="panel8_text_obj" class="text_obj" typeof="Text" resource="#panel8_text_obj">
+						<span class="metadata" property="isSaidThrough" resource="#caption8"></span>
+						<span id="panel8_text_nl" property="says" xml:lang="nl">Plots ... ?</span>
+						<span id="panel8_text_en" property="says" xml:lang="en">Suddenly ... ?</span>
+					</div>
+				</div>
+ 			</div>
+ 			
+ 			<div id="panel9_fallback" class="panel_fallback">
+				<img src="page2/panel3/fallback.png" alt="panel 9 fallback image"/>
+			</div>
+
+ 			<div id="panel9" class="panel" data-hasReadingOrder="3" typeof="Panel" resource="#panel9"> 
+ 				<div class="metadata">	
+					<span property="hasReadingOrder">3</span>
+					<span class="metadata" property="has" resource="#layer53"></span>
+					<span class="metadata" property="has" resource="#layer54"></span>
+					<span class="metadata" property="has" resource="#layer55"></span>
+					<span class="metadata" property="has" resource="#layer56"></span>
+				
+					<div class="metadata" typeof="Caption" resource="#caption9"></div>
+ 				</div>
+ 						
+				<div id="panel9_background" class="background" typeof="Layer" resource="#layer53">
+					<span class="metadata" property="has" resource="#location_earth"></span>
+					<img src="page2/panel3/background.png" alt="background image" onclick="showCharacterLayers('#panel9', event)"/>
+				</div>
+		
+				<div id="panel9_character" class="character" typeof="Layer" resource="#layer54">
+					<span class="metadata" property="has" resource="#character_cell"></span>
+					<img src="page2/panel3/character.png" alt="character_cell image" onclick="showBalloonLayers('#panel9')"/>
+				</div>
+		
+				<div id="panel9_caption" class="balloon" typeof="Layer" resource="#layer55">
+					<span class="metadata" property="has" resource="#caption9"></span>
+					<img src="page2/panel3/caption.png" alt="caption image" onclick="showTextLayers('#panel9')"/>
+				</div>
+		
+				<div id="panel9_text" class="text_container" onclick="showNextPanel('#panel10', event)" typeof="Layer" resource="#layer56">
+					<span class="metadata" property="has" resource="#panel9_text_obj"></span>
+					
+					<div id="panel9_text_obj" class="text_obj" typeof="Text" resource="#panel9_text_obj">
+						<span class="metadata" property="isSaidThrough" resource="#caption9"></span>
+						<span id="panel9_text_nl" property="says" xml:lang="nl">Even vanaf het begin!</span>
+						<span id="panel9_text_en" property="says" xml:lang="en">Let's start from the beginning!</span>
+					</div>
+				</div>
+ 			</div>
+ 			
+ 			<div id="panel10_fallback" class="panel_fallback">
+				<img src="page2/panel4/fallback.png" alt="panel 10 fallback image"/>
+			</div>
+
+ 			<div id="panel10" class="panel" data-hasReadingOrder="4" typeof="Panel" resource="#panel10">
+ 				<div class="metadata">
+					<span property="hasReadingOrder">4</span> 	
+					<span class="metadata" property="has" resource="#layer57"></span>
+					<span class="metadata" property="has" resource="#layer58"></span>
+					<span class="metadata" property="has" resource="#layer59"></span>
+					<span class="metadata" property="has" resource="#layer60"></span>
+				
+					<div class="metadata" typeof="Caption" resource="#caption10"></div>
+ 				</div>
+ 					
+				<div id="panel10_background" class="background" typeof="Layer" resource="#layer57">
+					<span class="metadata" property="has" resource="#location_earth"></span>
+					<img src="page2/panel4/background.png" alt="background image" onclick="showCharacterLayers('#panel10', event)"/>
+				</div>
+		
+				<div id="panel10_character" class="character" typeof="Layer" resource="#layer58">
+					<span class="metadata" property="has" resource="#character_organism"></span>
+					<img src="page2/panel4/character.png" alt="character_cell image" onclick="showBalloonLayers('#panel10')"/>
+				</div>
+		
+				<div id="panel10_caption" class="balloon" typeof="Layer" resource="#layer59">
+					<span class="metadata" property="has" resource="#caption10"></span>
+					<img src="page2/panel4/caption.png" alt="caption image" onclick="showTextLayers('#panel10')"/>
+				</div>
+		
+				<div id="panel10_text" class="text_container" onclick="showNextPanel('#panel11', event)" typeof="Layer" resource="#layer60">
+					<span class="metadata" property="has" resource="#panel10_text_obj"></span>
+					
+					<div id="panel10_text_obj" class="text_obj" typeof="Text" resource="#panel10_text_obj">
+						<span class="metadata" property="isSaidThrough" resource="#caption10"></span>
+						<span id="panel10_text_nl" property="says" xml:lang="nl">Evolutie</span>
+						<span id="panel10_text_en" property="says" xml:lang="en">Evolution</span>
+					</div>
+				</div>
+ 			</div>
+ 			
+ 			<div id="panel11_fallback" class="panel_fallback">
+				<img src="page2/panel5/fallback.png" alt="panel 11 fallback image"/>
+			</div>
+
+ 			<div id="panel11" class="panel" data-hasReadingOrder="5" typeof="Panel" resource="#panel11"> 	
+ 				<div class="metadata">
+					<span property="hasReadingOrder">5</span>
+					<span class="metadata" property="has" resource="#layer61"></span>
+					<span class="metadata" property="has" resource="#layer62"></span>
+					<span class="metadata" property="has" resource="#layer63"></span>
+					<span class="metadata" property="has" resource="#layer64"></span>
+			
+					<div class="metadata" typeof="Caption" resource="#caption11"></div>
+ 				</div>
+ 						
+				<div id="panel11_background" class="background" typeof="Layer" resource="#layer61">
+					<span class="metadata" property="has" resource="#location_earth"></span>
+					<img src="page2/panel5/background.png" alt="background image" onclick="showCharacterLayers('#panel11', event)"/>
+				</div>
+		
+				<div id="panel11_character" class="character" typeof="Layer" resource="#layer62">
+					<span class="metadata" property="has" resource="#character_animal"></span>
+					<img src="page2/panel5/character.png" alt="character_cell image" onclick="showBalloonLayers('#panel11')"/>
+				</div>
+		
+				<div id="panel11_caption" class="balloon" typeof="Layer" resource="#layer63">
+					<span class="metadata" property="has" resource="#caption11"></span>
+					<img src="page2/panel5/caption.png" alt="caption image" onclick="showTextLayers('#panel11')"/>
+				</div>
+		
+				<div id="panel11_text" class="text_container" onclick="showNextPanel('#panel12', event)" typeof="Layer" resource="#layer64">
+					<span class="metadata" property="has" resource="#panel11_text_obj"></span>
+					
+					<div id="panel11_text_obj" class="text_obj" typeof="Text" resource="#panel11_text_obj">
+						<span class="metadata" property="isSaidThrough" resource="#caption11"></span>
+						<span id="panel11_text_nl" property="says" xml:lang="nl">zorgde voor aanpassingen</span>
+						<span id="panel11_text_en" property="says" xml:lang="en">caused adaptations</span>
+					</div>
+				</div>
+ 			</div>
+ 			
+ 			<div id="panel12_fallback" class="panel_fallback">
+				<img src="page2/panel6/fallback.png" alt="panel 12 fallback image"/>
+			</div>
+
+ 			<div id="panel12" class="panel" data-hasReadingOrder="6" typeof="Panel" resource="#panel12"> 
+ 				<div class="metadata">
+					<span property="hasReadingOrder">6</span>	
+					<span class="metadata" property="has" resource="#layer65"></span>
+					<span class="metadata" property="has" resource="#layer66"></span>
+					<span class="metadata" property="has" resource="#layer67"></span>
+					<span class="metadata" property="has" resource="#layer68"></span>
+			
+					<div class="metadata" typeof="Caption" resource="#caption12"></div>
+ 				</div>
+ 						
+				<div id="panel12_background" class="background" typeof="Layer" resource="#layer65">
+					<span class="metadata" property="has" resource="#location_earth"></span>
+					<img src="page2/panel6/background.png" alt="background image" onclick="showCharacterLayers('#panel12', event)"/>
+				</div>
+		
+				<div id="panel12_character" class="character" typeof="Layer" resource="#layer66">
+					<span class="metadata" property="has" resource="#character_monkey"></span>
+					<img src="page2/panel6/character.png" alt="character_cell image" onclick="showBalloonLayers('#panel12')"/>
+				</div>
+		
+				<div id="panel12_caption" class="balloon" typeof="Layer" resource="#layer67">
+					<span class="metadata" property="has" resource="#caption12"></span>
+					<img src="page2/panel6/caption.png" alt="caption image" onclick="showTextLayers('#panel12')"/>
+				</div>
+		
+				<div id="panel12_text" class="text_container" onclick="completePageRead(event)" typeof="Layer" resource="#layer68">
+					<span class="metadata" property="has" resource="#panel12_text_obj"></span>
+					
+					<div id="panel12_text_obj" class="text_obj" typeof="Text" resource="#panel12_text_obj">
+						<span class="metadata" property="isSaidThrough" resource="#caption12"></span>
+						<span id="panel12_text_nl" property="says" xml:lang="nl">Evolutie naar de apensoort</span>
+						<span id="panel12_text_en" property="says" xml:lang="en">Evolution to monkey species</span>
+					</div>
+				</div>
+ 			</div>
+        </div>
+        
+        <script>
+			var lastPanel = '#panel12';
+			var firstPanel = '#panel7';
+			nextPanels['#panel7'] = '#panel8';
+			nextPanels['#panel8'] = '#panel9';
+			nextPanels['#panel9'] = '#panel10';
+			nextPanels['#panel10'] = '#panel11';
+			nextPanels['#panel11'] = '#panel12';
+	
+			window.onload=start;
+    	</script>
+    </body>
+</html>

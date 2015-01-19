@@ -1,0 +1,53 @@
+.background {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	z-index: 1;
+}
+
+.character {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	z-index: 2;
+	display:none;
+}
+
+.balloon {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	z-index: 3;
+	display:none;
+}
+
+#text_a {
+	position: absolute;
+	left: 165px;
+	top: 160px;
+}
+
+#text_b {
+	position: absolute;
+	left: 310px;
+	top: 180px;
+}
+
+.text {
+	font-family:"Ariel";
+	font-size:40px;
+	display:none;
+	z-index: 4;
+}
+
+#text_a_en {
+	display:none;
+}
+
+#text_b_en {
+	display:none;
+}
+
+.language_button {
+	float: right;
+}

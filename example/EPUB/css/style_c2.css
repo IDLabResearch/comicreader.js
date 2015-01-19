@@ -1,0 +1,144 @@
+@import url("main.css");
+
+#panel7 {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+}
+
+#panel7_fallback {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+}
+
+#panel8 {
+	position: absolute;
+	left: 620px;
+	top: 0px;
+}
+
+#panel8_fallback {
+	position: absolute;
+	left: 620px;
+	top: 0px;
+}
+
+#panel9 {
+	position: absolute;
+	left: 0px;
+	top: 420px;
+}
+
+#panel9_fallback {
+	position: absolute;
+	left: 0px;
+	top: 420px;
+}
+
+#panel10 {
+	position: absolute;
+	left: 620px;
+	top: 420px;
+}
+
+#panel10_fallback {
+	position: absolute;
+	left: 620px;
+	top: 420px;
+}
+
+#panel11 {
+	position: absolute;
+	left: 0px;
+	top: 840px;
+}
+
+#panel11_fallback {
+	position: absolute;
+	left: 0px;
+	top: 840px;
+}
+
+#panel12 {
+	position: absolute;
+	left: 620px;
+	top: 840px;
+}
+
+#panel12_fallback {
+	position: absolute;
+	left: 620px;
+	top: 840px;
+}
+
+.balloon {
+	left: 0px;
+	top: 0px;
+}
+
+.text_obj {
+	font-size:27px;
+	width:150px;
+}
+
+#panel7_text_obj {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+}
+
+#panel7_text_en {
+	display:none;
+}
+
+#panel8_text_obj {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+}
+
+#panel8_text_en {
+	display:none;
+}
+
+#panel9_text_obj {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+}
+
+#panel9_text_en {
+	display:none;
+}
+
+#panel10_text_obj {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+}
+
+#panel10_text_en {
+	display:none;
+}
+
+#panel11_text_obj {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+}
+
+#panel11_text_en {
+	display:none;
+}
+
+#panel12_text_obj {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	font-size:25px;
+}
+
+#panel12_text_en {
+	display:none;
+}

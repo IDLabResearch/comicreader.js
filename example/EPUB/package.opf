@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package version="3.0" xml:lang="en" unique-identifier="uid" xmlns="http://www.idpf.org/2007/opf" prefix="cc: http://creativecommons.org/ns#">
+    <metadata xmlns:dc="http://purl.org/dc/elements/1.1/">
+        <dc:title xml:lang="en" id="title">Example Comic with Comicreader.js</dc:title>
+        <dc:title xml:lang="nl" id="title_nl">Voorbeeld strip met Comicreader.js</dc:title>
+        <dc:language>en</dc:language> 
+        <dc:language>nl</dc:language> 
+        <dc:identifier id="uid">ugent.mmlab.pheyvaer.comic_v2</dc:identifier>       
+        <dc:creator id="author">Pieter Heyvaert</dc:creator>
+        <dc:creator id="coverartist">John Doe</dc:creator>
+        <dc:creator id="artist">Jane Doe</dc:creator>
+        <dc:creator id="translater">James Doe</dc:creator>
+        <dc:contributor id="adapter">Riley Doe</dc:contributor>
+        <dc:contributor id="editor">Harry Doe</dc:contributor>
+        <dc:publisher id="publisher">Richard Doe</dc:publisher>
+        <dc:date>2013</dc:date>
+        <dc:description xml:lang="en">The description of the comic.</dc:description>
+        <dc:description xml:lang="nl">De beschrijving van de strip.</dc:description>
+		<meta refines="#author" property="role" scheme="marc:relators">aut</meta>
+		<meta refines="#coverartist" property="role" scheme="marc:relators">ill</meta>
+		<meta refines="#artist" property="role" scheme="marc:relators">ill</meta>
+		<meta refines="#translater" property="role" scheme="marc:relators">trl</meta>
+		<meta refines="#adapter" property="role" scheme="marc:relators">adp</meta>
+		<meta refines="#editor" property="role" scheme="marc:relators">edt</meta>
+		<meta property="dcterms:modified">2015-01-13T12:00:00Z</meta>  
+    </metadata>
+    
+    <manifest>
+        <item id="css_c1" href="css/style_c1.css" media-type="text/css"/>
+        <item id="css_c2" href="css/style_c2.css" media-type="text/css"/>
+        <item id="css_c3" href="css/style_c3.css" media-type="text/css"/>
+        <item id="css_main" href="css/main.css" media-type="text/css"/>
+        <item id="css_title" href="css/style_title.css" media-type="text/css"/>
+        <item id="ttl" media-type="application/xhtml+xml" href="titlepage.xhtml" properties="nav"/>        
+        <item id="c1" media-type="application/xhtml+xml" href="c1.xhtml" properties="scripted"/>
+        <item id="c2" media-type="application/xhtml+xml" href="c2.xhtml" properties="scripted"/>
+        <item id="c3" media-type="application/xhtml+xml" href="c3.xhtml" properties="scripted"/>
+        <item id="metadata" media-type="application/xhtml+xml" href="metadata.xhtml" />
+        <item id="cover" media-type="image/jpeg" href="cover.jpg" properties="cover-image"/>         
+        <item id="panel1_image1" media-type="image/png" href="page1/panel1/panel1_balloon1.png"/>
+        <item id="panel1_image2" media-type="image/png" href="page1/panel1/panel1_balloon2.png"/>
+        <item id="panel1_image3" media-type="image/png" href="page1/panel1/panel1_character1.png"/>
+        <item id="panel1_image4" media-type="image/png" href="page1/panel1/panel1_character2.png"/>
+        <item id="panel1_image5" media-type="image/png" href="page1/panel1/panel1_background.png"/>
+        <item id="panel1_image6" media-type="image/png" href="page1/panel1/fallback.png"/>
+        <item id="panel2_image1" media-type="image/png" href="page1/panel2/panel2_balloon1.png"/>
+        <item id="panel2_image2" media-type="image/png" href="page1/panel2/panel2_balloon2.png"/>
+        <item id="panel2_image3" media-type="image/png" href="page1/panel2/panel2_character1.png"/>
+        <item id="panel2_image4" media-type="image/png" href="page1/panel2/panel2_character2.png"/>
+        <item id="panel2_image5" media-type="image/png" href="page1/panel2/panel2_background.png"/>
+        <item id="panel2_image6" media-type="image/png" href="page1/panel2/fallback.png"/>
+        <item id="panel3_image1" media-type="image/png" href="page1/panel3/panel3_balloon1.png"/>
+        <item id="panel3_image2" media-type="image/png" href="page1/panel3/panel3_balloon3.png"/>
+        <item id="panel3_image3" media-type="image/png" href="page1/panel3/panel3_character1.png"/>
+        <item id="panel3_image4" media-type="image/png" href="page1/panel3/panel3_character2.png"/>
+        <item id="panel3_image5" media-type="image/png" href="page1/panel3/panel3_character3.png"/>
+        <item id="panel3_image6" media-type="image/png" href="page1/panel3/panel3_background.png"/>
+        <item id="panel3_image7" media-type="image/png" href="page1/panel3/fallback.png"/>
+        <item id="panel4_image1" media-type="image/png" href="page1/panel4/panel4_balloon2.png"/>
+        <item id="panel4_image2" media-type="image/png" href="page1/panel4/panel4_balloon3.png"/>
+        <item id="panel4_image3" media-type="image/png" href="page1/panel4/panel4_character1.png"/>
+        <item id="panel4_image4" media-type="image/png" href="page1/panel4/panel4_character2.png"/>
+        <item id="panel4_image5" media-type="image/png" href="page1/panel4/panel4_character3.png"/>
+        <item id="panel4_image6" media-type="image/png" href="page1/panel4/panel4_background.png"/>
+        <item id="panel4_image7" media-type="image/png" href="page1/panel4/fallback.png"/>
+        <item id="panel5_image1" media-type="image/png" href="page1/panel5/panel5_background.png"/>
+        <item id="panel5_image2" media-type="image/png" href="page1/panel5/panel5_balloon1.png"/>
+        <item id="panel5_image3" media-type="image/png" href="page1/panel5/panel5_character1.png"/>
+        <item id="panel5_image4" media-type="image/png" href="page1/panel5/panel5_character2.png"/>
+        <item id="panel5_image5" media-type="image/png" href="page1/panel5/panel5_character3.png"/>
+        <item id="panel5_image6" media-type="image/png" href="page1/panel5/panel5_character4.png"/>
+        <item id="panel5_image7" media-type="image/png" href="page1/panel5/fallback.png"/>
+        <item id="panel6_image1" media-type="image/png" href="page1/panel6/panel6_background.png"/>
+        <item id="panel6_image2" media-type="image/png" href="page1/panel6/panel6_balloon1.png"/>
+        <item id="panel6_image3" media-type="image/png" href="page1/panel6/panel6_character1.png"/>
+        <item id="panel6_image4" media-type="image/png" href="page1/panel6/panel6_character2.png"/>
+        <item id="panel6_image5" media-type="image/png" href="page1/panel6/fallback.png"/>
+        <item id="panel3_audio1" media-type="audio/wav" href="audio/panel3_1.wav"/>
+        
+        <item id="page2_panel1_image1" media-type="image/png" href="page2/panel1/background.png"/>
+        <item id="page2_panel1_image2" media-type="image/png" href="page2/panel1/caption.png"/>
+        <item id="page2_panel1_image3" media-type="image/png" href="page2/panel1/character.png"/>
+        <item id="page2_panel1_image4" media-type="image/png" href="page2/panel1/fallback.png"/>
+        <item id="page2_panel2_image1" media-type="image/png" href="page2/panel2/background.png"/>
+        <item id="page2_panel2_image2" media-type="image/png" href="page2/panel2/caption.png"/>
+        <item id="page2_panel2_image3" media-type="image/png" href="page2/panel2/character.png"/>
+        <item id="page2_panel2_image4" media-type="image/png" href="page2/panel2/fallback.png"/>
+        <item id="page2_panel3_image1" media-type="image/png" href="page2/panel3/background.png"/>
+        <item id="page2_panel3_image2" media-type="image/png" href="page2/panel3/caption.png"/>
+        <item id="page2_panel3_image3" media-type="image/png" href="page2/panel3/character.png"/>
+        <item id="page2_panel3_image4" media-type="image/png" href="page2/panel3/fallback.png"/>
+        <item id="page2_panel4_image1" media-type="image/png" href="page2/panel4/background.png"/>
+        <item id="page2_panel4_image2" media-type="image/png" href="page2/panel4/caption.png"/>
+        <item id="page2_panel4_image3" media-type="image/png" href="page2/panel4/character.png"/>
+        <item id="page2_panel4_image4" media-type="image/png" href="page2/panel4/fallback.png"/>
+        <item id="page2_panel5_image1" media-type="image/png" href="page2/panel5/background.png"/>
+        <item id="page2_panel5_image2" media-type="image/png" href="page2/panel5/caption.png"/>
+        <item id="page2_panel5_image3" media-type="image/png" href="page2/panel5/character.png"/>
+        <item id="page2_panel5_image4" media-type="image/png" href="page2/panel5/fallback.png"/>
+        <item id="page2_panel6_image1" media-type="image/png" href="page2/panel6/background.png"/>
+        <item id="page2_panel6_image2" media-type="image/png" href="page2/panel6/caption.png"/>
+        <item id="page2_panel6_image3" media-type="image/png" href="page2/panel6/character.png"/>
+        <item id="page2_panel6_image4" media-type="image/png" href="page2/panel6/fallback.png"/>
+        
+        <item id="page3_panel1_image1" media-type="image/png" href="page3/panel1/background.png"/>
+        <item id="page3_panel1_image2" media-type="image/png" href="page3/panel1/character.png"/>
+        <item id="page3_panel1_image3" media-type="image/png" href="page3/panel1/fallback.png"/>
+        <item id="page3_panel2_image1" media-type="image/png" href="page3/panel2/background.png"/>
+        <item id="page3_panel2_image2" media-type="image/png" href="page3/panel2/character1.png"/>
+        <item id="page3_panel2_image3" media-type="image/png" href="page3/panel2/fallback.png"/>
+        <item id="page3_panel2_image4" media-type="image/png" href="page3/panel2/character2.png"/>
+        <item id="page3_panel2_image5" media-type="image/png" href="page3/panel2/balloon.png"/>
+        <item id="page3_panel2_image6" media-type="image/png" href="page3/panel2/effect.png"/>
+        
+        <item id="jquery" href="script/jquery.js" media-type="text/javascript"/>    
+        <item id="jquery_zoomooz" href="script/jquery.zoomooz.min.js" media-type="text/javascript"/>   
+        <item id="comicreader" href="script/comicreader.js" media-type="text/javascript"/>  
+    </manifest>
+    <spine>
+        <itemref idref="ttl"/>
+        <itemref idref="c1"/>    
+        <itemref idref="c2"/>  
+        <itemref idref="c3"/> 
+    </spine>
+</package>

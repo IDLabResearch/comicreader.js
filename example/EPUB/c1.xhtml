@@ -1,0 +1,488 @@
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+    <head>
+        <title>An Unexpected Encounter</title>
+        <link type="text/css" rel="stylesheet" href="css/style_c1.css"/>      
+		<script src="./script/jquery.js"></script>
+		<script src="./script/jquery.zoomooz.min.js"></script>
+		<script src="./script/comicreader.js"></script>
+    </head>
+    
+    <body vocab="http://semweb.mmlab.be/ns/dicera#" prefix="emotion: http://purl.obolibrary.org/obo/">
+    	<button type="button" class="language_button"
+		onclick="changeLanguageAllPanels('en')">EN</button>
+		<button type="button" class="language_button"
+		onclick="changeLanguageAllPanels('nl')">NL</button>
+		
+		<div id="page1" class="page" typeof="Page" resource="#page1">
+		 	<div class="metadata">
+				<span property="hasReadingOrder">1</span>
+				<span property="has" resource="#panel1"></span>
+				<span property="has" resource="#panel2"></span>
+				<span property="has" resource="#panel3"></span>
+				<span property="has" resource="#panel4"></span>
+				<span property="has" resource="#panel5"></span>
+				<span property="has" resource="#panel6"></span>
+			</div>
+		
+			<div id="panel1_fallback" class="panel_fallback">
+				<img src="page1/panel1/fallback.png" alt="panel 1 fallback image"/>
+			</div>
+
+ 			<div id="panel1" class="panel" data-readingorder="1" typeof="Panel" resource="#panel1"> 
+ 				<div class="metadata">
+					<span property="hasReadingOrder">1</span>	
+					<span property="has" resource="#layer1"></span>
+					<span property="has" resource="#layer2"></span>
+					<span property="has" resource="#layer3"></span>
+					<span property="has" resource="#layer4"></span>
+					<span property="has" resource="#layer5"></span>
+					<span property="has" resource="#layer6"></span>
+					<span property="has" resource="#layer7"></span>
+ 				
+					<div>
+						<div typeof="Balloon" resource="#balloon1_a"></div>
+						<div typeof="Balloon" resource="#balloon1_b"></div>
+						
+						<div resource="#character_john">
+							<span property="has" resource="#balloon1_a"></span>
+						</div>
+						
+						<div resource="#character_suzy">
+							<span property="has" resource="#balloon1_b"></span>
+						</div>
+					</div>
+ 						
+ 				</div>
+ 						
+				<div id="panel1_background" class="background" typeof="Layer" resource="#layer1">
+					<span class="metadata" property="has" resource="#location_earth"></span>
+					<img src="page1/panel1/panel1_background.png" alt="background image" onclick="showCharacterLayers('#panel1', event)"/>
+				</div>
+		
+				<div id="panel1_character_a" class="character" typeof="Layer" resource="#layer2">
+					<span class="metadata" property="has" resource="#character_john"></span>
+					<img src="page1/panel1/panel1_character1.png" alt="character_a image" onclick="showBalloonLayers('#panel1')"/>
+				</div>
+		
+				<div id="panel1_character_b" class="character" typeof="Layer" resource="#layer3">
+					<span class="metadata" property="has" resource="#character_suzy"></span>
+					<img src="page1/panel1/panel1_character2.png" alt="character_b image" onclick="showBalloonLayers('#panel1')"/>
+				</div>
+		
+				<div id="panel1_balloon_a" class="balloon" typeof="Layer" resource="#layer4">
+					<span class="metadata" property="has" resource="#balloon1_a"></span>
+					<img src="page1/panel1/panel1_balloon1.png" alt="balloon_a image" onclick="showTextLayers('#panel1', false)"/>
+				</div>
+		
+				<div id="panel1_balloon_b" class="balloon" typeof="Layer" resource="#layer5">
+					<span class="metadata" property="has" resource="#balloon1_b"></span>
+					<img src="page1/panel1/panel1_balloon2.png" alt="balloon_b image" onclick="showTextLayers('#panel1')"/>
+				</div>
+				
+				<div id="panel1_text_a" class="text_container" onclick="showNextPanel('#panel2', event)" typeof="Layer" resource="#layer6">
+					<span class="metadata" property="has" resource="#panel1_text_a_obj"></span>
+					
+					<div id="panel1_text_a_obj" class="text_obj" typeof="Text" resource="#panel1_text_a_obj">
+						<span class="metadata" property="isSaidThrough" resource="#balloon1_a"></span>
+						<span class="metadata" property="withEmotion" resource="emotion:NBO_0000231"></span>
+						<span id="panel1_text_a_nl" class="text_nl" property="says" xml:lang="nl">Hallo!</span>
+						<span id="panel1_text_a_en" class="text_en" property="says" xml:lang="en">Hello!</span>
+					</div>
+				</div>
+
+				<div id="panel1_text_b" class="text_container" onclick="showNextPanel('#panel2', event)" typeof="Layer" resource="#layer7">
+					<span class="metadata" property="has" resource="#panel1_text_b_obj"></span>
+					
+					<div id="panel1_text_b_obj" class="text_obj" resource="#panel1_text_b_obj" typeof="Text">
+						<span class="metadata" property="isSaidThrough" resource="#balloon1_b"></span>
+						<span id="panel1_text_b_nl" property="says" xml:lang="nl">Hoi!</span>
+						<span id="panel1_text_b_en" property="says" xml:lang="en">Hey!</span>
+					</div>
+				</div>
+ 			</div>
+		
+			<div id="panel2" class="panel" data-readingorder="2"  typeof="Panel" resource="#panel2">
+				<div class="metadata">
+					<span property="hasReadingOrder">2</span>
+					<span property="has" resource="#layer8"></span>
+					<span property="has" resource="#layer9"></span>
+					<span property="has" resource="#layer10"></span>
+					<span property="has" resource="#layer11"></span>
+					<span property="has" resource="#layer12"></span>
+					<span property="has" resource="#layer13"></span>
+					<span property="has" resource="#layer14"></span>
+					
+					<div>
+ 						<div typeof="Balloon" resource="#balloon2_a"></div>
+						<div typeof="Balloon" resource="#balloon2_b"></div>
+						
+						<div resource="#character_john">
+							<span property="has" resource="#balloon2_a"></span>
+						</div>
+						
+						<div resource="#character_suzy">
+							<span property="has" resource="#balloon2_b"></span>
+						</div>
+ 					</div>
+ 				</div>
+ 				
+				<div id="panel2_fallback" class="panel_fallback">
+					<img src="page1/panel2/fallback.png" alt="panel 2 fallback image"/>
+				</div>
+			
+				<div id="panel2_background" class="background" typeof="Layer" resource="#layer13">
+					<span class="metadata" property="has" resource="#location_earth"></span>
+					<img src="page1/panel2/panel2_background.png" alt="background image" onclick="showCharacterLayers('#panel2', event)"/>
+				</div>
+		
+				<div id="panel2_character_a" class="character" typeof="Layer" resource="#layer14">
+					<span class="metadata" property="has" resource="#character_john"></span>
+					<img src="page1/panel2/panel2_character1.png" alt="character_a image" onclick="showBalloonLayers('#panel2')"/>
+				</div>
+		
+				<div id="panel2_character_b" class="character" typeof="Layer" resource="#layer8">
+					<span class="metadata" property="has" resource="#character_suzy"></span>
+					<img src="page1/panel2/panel2_character2.png" alt="character_b image" onclick="showBalloonLayers('#panel2')"/>
+				</div>
+		
+				<div id="panel2_balloon_a" class="balloon" typeof="Layer" resource="#layer9">
+					<span class="metadata" property="has" resource="#balloon2_a"></span>
+					<img src="page1/panel2/panel2_balloon1.png" alt="balloon_a image" onclick="showTextLayers('#panel2')"/>
+				</div>
+		
+				<div id="panel2_balloon_b" class="balloon" typeof="Layer" resource="#layer10">
+					<span class="metadata" property="has" resource="#balloon2_b"></span>
+					<img src="page1/panel2/panel2_balloon2.png" alt="balloon_b image" onclick="showTextLayers('#panel2')"/>
+				</div>
+		
+				<div id="panel2_text_a" class="text_container" onclick="showNextPanel('#panel3', event)" typeof="Layer" resource="#layer11">
+					<span class="metadata" property="has" resource="#panel2_text_a_obj"></span>
+					
+					<div id="panel2_text_a_obj" class="text_obj" typeof="Text" resource="#panel2_text_a_obj">
+						<span class="metadata" property="isSaidThrough" resource="#balloon2_a"></span>
+						<span id="panel2_text_a_nl" property="says" xml:lang="nl">Alles goed?</span>
+						<span id="panel2_text_a_en" property="says" xml:lang="en">How are you?</span>
+					</div>
+				</div>
+		
+				<div id="panel2_text_b" class="text_container" onclick="showNextPanel('#panel3', event)" typeof="Layer" resource="#layer12">
+					<span class="metadata" property="has" resource="#panel2_text_b_obj"></span>
+					
+					<div id="panel2_text_b_obj" class="text_obj" typeof="Text" resource="#panel2_text_b_obj">
+						<span class="metadata" property="isSaidThrough" resource="#balloon2_b"></span>
+						<span id="panel2_text_b_nl" property="says" xml:lang="nl">Goed, jij?</span>
+						<span id="panel2_text_b_en" property="says" xml:lang="en">Good, you?</span>
+					</div>
+				</div>
+			</div>
+		
+			<div id="panel3" class="panel" data-readingorder="3" typeof="Panel" resource="#panel3">
+				<div class="metadata">
+					<span property="hasReadingOrder">3</span>
+					<span property="has" resource="#layer15"></span>
+					<span property="has" resource="#layer16"></span>
+					<span property="has" resource="#layer17"></span>
+					<span property="has" resource="#layer18"></span>
+					<span property="has" resource="#layer19"></span>
+					<span property="has" resource="#layer20"></span>
+					<span property="has" resource="#layer21"></span>
+					<span property="has" resource="#layer22"></span>
+					<span property="has" resource="#layer23"></span>
+				
+					<div>
+						<div typeof="Balloon" resource="#balloon3_a"></div>
+						<div typeof="Balloon" resource="#balloon3_b"></div>
+						
+						<div resource="#character_john">
+							<span property="has" resource="#balloon3_a"></span>
+						</div>
+						
+						<div resource="#character_suzy">
+							<span property="has" resource="#balloon3_b"></span>
+						</div>
+						
+						<div id="panel3_audio_obj" typeof="audio" resouce="#panel3_audio_obj">
+							<span property="rdfs:label">Simple tone</span>
+						
+							<audio id="panel3_audio_1" src="audio/panel3_1.wav" preload="auto">
+								Playing audio is not supported by your client.
+							</audio>
+						</div>
+					</div>
+ 				</div>
+ 				
+				<div id="panel3_fallback" class="panel_fallback">
+					<img src="page1/panel3/fallback.png" alt="panel 3 fallback image"/>
+				</div>
+			
+				<div id="panel3_background" class="background" typeof="Layer" resource="#layer15">
+					<span class="metadata" property="has" resource="#location_earth"></span>
+					<img src="page1/panel3/panel3_background.png" alt="background image" onclick="showCharacterLayers('#panel3')"/>
+				</div>
+		
+				<div id="panel3_character_a" class="character" typeof="Layer" resource="#layer16">
+					<span class="metadata" property="has" resource="#character_john"></span>
+					<img src="page1/panel3/panel3_character1.png" alt="character_a image" onclick="showBalloonLayers('#panel3')"/>
+				</div>
+		
+				<div id="panel3_character_b" class="character" typeof="Layer" resource="#layer17">
+					<span class="metadata" property="has" resource="#character_suzy"></span>
+					<img src="page1/panel3/panel3_character2.png" alt="character_b image" onclick="showBalloonLayers('#panel3')"/>
+				</div>
+				
+				<div id="panel3_character_c" class="character" typeof="Layer" resource="#layer18">
+					<span class="metadata" property="has" resource="#character_frank"></span>
+					<img src="page1/panel3/panel3_character3.png" alt="character_c image" onclick="showBalloonLayers('#panel3')"/>
+				</div>
+		
+				<div id="panel3_balloon_a" class="balloon" typeof="Layer" resource="#layer19">
+					<span class="metadata" property="has">true</span>
+					<img src="page1/panel3/panel3_balloon1.png" alt="balloon_a image" onclick="showTextLayers('#panel3')"/>
+				</div>
+				
+				<div id="panel3_balloon_c" class="balloon" typeof="Layer" resource="#layer20">
+					<span class="metadata" property="has">true</span>
+					<img src="page1/panel3/panel3_balloon3.png" alt="balloon_c image" onclick="showTextLayers('#panel3')"/>
+				</div>
+		
+				<div id="panel3_text_a" class="text_container" onclick="showNextPanel('#panel4', event)" typeof="Layer" resource="#layer21">
+					<span class="metadata" property="has" resource="#panel3_text_a_obj"></span>
+					
+					<div id="panel3_text_a_obj" class="text_obj" typeof="Text" resource="#panel3_text_a_obj">
+						<span class="metadata" property="isSaidThrough" resource="#balloon3_a"></span>
+						<span id="panel3_text_a_nl" property="says" xml:lang="nl">Moet je kijken wie we daar hebben!</span>
+						<span id="panel3_text_a_en" property="says" xml:lang="en">Look who we have here!</span>
+					</div>
+				</div>
+		
+				<div id="panel3_text_c" class="text_container" onclick="showNextPanel('#panel4', event)" typeof="Layer" resource="#layer22">
+					<span class="metadata" property="has" resource="#panel3_text_c_obj"></span>
+					
+					<div id="panel3_text_c_obj" class="text_obj" typeof="Text" resource="#panel3_text_c_obj">
+						<span class="metadata" property="isSaidThrough" resource="#balloon3_b"></span>
+						<span id="panel3_text_c_nl" property="says" xml:lang="nl">Een onverwachte ontmoeting ...</span>
+						<span id="panel3_text_c_en" property="says" xml:lang="en">An unexpected encounter ...</span>
+					</div>
+				</div>
+				
+				<div id="panel3_audio" class="audio" typeof="Layer" resource="#layer23">
+					<span class="metadata" property="hasAudio" resource="#panel3_audio_obj"></span>
+				</div>
+			</div>
+		
+			<div id="panel4" class="panel" data-readingorder="4" typeof="Panel" resource="#panel4">
+				<div class="metadata">
+					<span property="hasReadingOrder">4</span>
+					<span property="has" resource="#layer24"></span>
+					<span property="has" resource="#layer25"></span>
+					<span property="has" resource="#layer26"></span>
+					<span property="has" resource="#layer27"></span>
+					<span property="has" resource="#layer28"></span>
+					<span property="has" resource="#layer29"></span>
+					<span property="has" resource="#layer30"></span>
+					<span property="has" resource="#layer31"></span>
+ 				
+					<div>
+						<div typeof="Balloon" resource="#balloon4_b"></div>
+						<div typeof="Balloon" resource="#balloon4_c"></div>
+						
+						<div resource="#character_suzy">
+							<span property="has" resource="#balloon4_b"></span>
+						</div>
+						
+						<div resource="#character_frank">
+							<span property="has" resource="#balloon4_c"></span>
+						</div>
+					</div>
+ 				</div>
+ 				
+				<div id="panel4_fallback" class="panel_fallback">
+					<img src="page1/panel4/fallback.png" alt="panel 4 fallback image"/>
+				</div>
+				
+				<div id="panel4_background" class="background" typeof="Layer" resource="#layer24">
+					<span class="metadata" property="has" resource="#location_yavin"></span>
+					<img src="page1/panel4/panel4_background.png" alt="background image" onclick="showCharacterLayers('#panel4')"/>
+				</div>
+		
+				<div id="panel4_character_a" class="character" typeof="Layer" resource="#layer25">
+					<span class="metadata" property="has" resource="#character_john"></span>
+					<img src="page1/panel4/panel4_character1.png" alt="character_a image" onclick="showBalloonLayers('#panel4')"/>
+				</div>
+		
+				<div id="panel4_character_b" class="character" typeof="Layer" resource="#layer26">	
+					<span class="metadata" property="has" resource="#character_suzy"></span>
+					<img src="page1/panel4/panel4_character2.png" alt="character_b image" onclick="showBalloonLayers('#panel4')"/>
+				</div>
+				
+				<div id="panel4_character_c" class="character" typeof="Layer" resource="#layer27">
+					<span class="metadata" property="has" resource="#character_frank"></span>
+					<img src="page1/panel4/panel4_character3.png" alt="character_c image" onclick="showBalloonLayers('#panel4')"/>
+				</div>
+		
+				<div id="panel4_balloon_a" class="balloon" typeof="Layer" resource="#layer28">
+					<span class="metadata" property="has">true</span>
+					<img src="page1/panel4/panel4_balloon2.png" alt="balloon_b image" onclick="showTextLayers('#panel4')"/>
+				</div>
+		
+				<div id="panel4_balloon_b" class="balloon" typeof="Layer" resource="#layer29">
+					<span class="metadata" property="has">true</span>
+					<img src="page1/panel4/panel4_balloon3.png" alt="balloon_c image" onclick="showTextLayers('#panel4')"/>
+				</div>
+		
+				<div id="panel4_text_b" class="text_container" onclick="showNextPanel('#panel5', event)" typeof="Layer" resource="#layer30">
+					<span class="metadata" property="has" resource="#panel4_text_b_obj"></span>
+						
+					<div id="panel4_text_b_obj" class="text_obj" typeof="Text" resource="#panel4_text_b_obj">
+						<span class="metadata" property="isSaidThrough" resource="#balloon4_b"></span>
+						<span id="panel4_text_b_nl" property="says" xml:lang="nl">Wat doe jij hier?</span>
+						<span id="panel4_text_b_en" property="says" xml:lang="en">What are you doing here?</span>
+					</div>
+				</div>
+		
+				<div id="panel4_text_c" class="text_container" onclick="showNextPanel('#panel5', event)" typeof="Layer" resource="#layer31">
+					<span class="metadata" property="has" resource="#panel4_text_c_obj"></span>
+					
+					<div id="panel4_text_c_obj" class="text_obj" typeof="Text" resource="#panel4_text_c_obj">
+						<span class="metadata" property="isSaidThrough" resource="#balloon4_c"></span>
+						<span id="panel4_text_c_nl" property="says" xml:lang="nl">Dat kan ik je ook vragen!</span>
+						<span id="panel4_text_c_en" property="says" xml:lang="en">I could ask you the same!</span>
+					</div>
+				</div>
+			</div>
+			
+			<div id="panel5" class="panel" data-readingorder="5"  typeof="Panel" resource="#panel5">
+				<div class="metadata">
+					<span property="hasReadingOrder">5</span>
+					<span property="has" resource="#layer32"></span>
+					<span property="has" resource="#layer33"></span>
+					<span property="has" resource="#layer34"></span>
+					<span property="has" resource="#layer35"></span>
+					<span property="has" resource="#layer36"></span>
+					<span property="has" resource="#layer37"></span>
+					<span property="has" resource="#layer38"></span>
+					<span property="has" resource="#layer39"></span>
+				
+					<div>
+						<div typeof="Balloon" resource="#balloon5_a"></div>
+						
+						<div resource="#character_john">
+							<span property="has" resource="#balloon5_a"></span>
+						</div>
+					</div>
+ 				</div>
+ 				
+				<div id="panel5_fallback" class="panel_fallback">
+					<img src="page1/panel5/fallback.png" alt="panel 5 fallback image"/>
+				</div>
+				
+				<div id="panel5_background" class="background" typeof="Layer" resource="#layer32">
+					<span class="metadata" property="has" resource="#location_earth"></span>
+					<img src="page1/panel5/panel5_background.png" alt="background image" onclick="showCharacterLayers('#panel5')"/>
+				</div>
+		
+				<div id="panel5_character_a" class="character" typeof="Layer" resource="#layer33">
+					<span class="metadata" property="has" resource="#character_suzy"></span>
+					<img src="page1/panel5/panel5_character1.png" alt="character_a image" onclick="showBalloonLayers('#panel5')"/>
+				</div>
+		
+				<div id="panel5_character_b" class="character" typeof="Layer" resource="#layer35">
+					<span class="metadata" property="has" resource="#character_vincent"></span>
+					<img src="page1/panel5/panel5_character2.png" alt="character_b image" onclick="showBalloonLayers('#panel5')"/>
+				</div>
+				
+				<div id="panel5_character_c" class="character" typeof="Layer" resource="#layer36">
+					<span class="metadata" property="has" resource="#character_john"></span>
+					<img src="page1/panel5/panel5_character3.png" alt="character_c image" onclick="showBalloonLayers('#panel5')"/>
+				</div>
+				
+				<div id="panel5_character_c" class="character" typeof="Layer" resource="#layer37">
+					<span class="metadata" property="has" resource="#character_frank"></span>
+					<img src="page1/panel5/panel5_character4.png" alt="character_d image" onclick="showBalloonLayers('#panel5')"/>
+				</div>
+		
+				<div id="panel5_balloon_a" class="balloon" typeof="Layer" resource="#layer38">
+					<span class="metadata" property="has">true</span>
+					<img src="page1/panel5/panel5_balloon1.png" alt="balloon_a image" onclick="showTextLayers('#panel5')"/>
+				</div>
+		
+				<div id="panel5_text_a" class="text_container" onclick="showNextPanel('#panel6', event)" typeof="Layer" resource="#layer39">
+					<span class="metadata" property="has" resource="#panel5_text_a_obj"></span>
+					
+					<div id="panel5_text_a_obj" class="text_obj" typeof="Text" resource="#panel5_text_a_obj">
+						<span class="metadata" property="isSaidThrough" resource="#balloon5_a"></span>
+						<span id="panel5_text_a_nl" property="says" xml:lang="nl">Daar komt nog iemand aan!</span>
+						<span id="panel5_text_a_en" property="says" xml:lang="en">Somebody else is here!</span>
+					</div>
+				</div>
+			</div>
+			
+			<div id="panel6" class="panel" data-readingorder="6"  typeof="Panel" resource="#panel6">
+				<div class="metadata">
+					<span property="hasReadingOrder">6</span>
+					<span property="has" resource="#layer40"></span>
+					<span property="has" resource="#layer41"></span>
+					<span property="has" resource="#layer42"></span>
+					<span property="has" resource="#layer43"></span>
+					<span property="has" resource="#layer44"></span>
+				
+					<div>
+						<div typeof="Balloon" resource="#balloon6_a"></div>
+						
+						<div resource="#character_frank">
+							<span property="has" resource="#balloon6_a"></span>
+						</div>
+					</div>
+ 				</div>
+ 				
+				<div id="panel6_fallback" class="panel_fallback">
+					<img src="page1/panel6/fallback.png" alt="panel 6 fallback image"/>
+				</div>
+				
+				<div id="panel6_background" class="background" typeof="Layer" resource="#layer40">
+					<span class="metadata" property="has" resource="#location_earth"></span>
+					<img src="page1/panel6/panel6_background.png" alt="background image" onclick="showCharacterLayers('#panel6')"/>
+				</div>
+		
+				<div id="panel6_character_a" class="character" typeof="Layer" resource="#layer41">
+					<span class="metadata" property="has" resource="#character_vincent"></span>
+					<img src="page1/panel6/panel6_character1.png" alt="character_a image" onclick="showBalloonLayers('#panel6')"/>
+				</div>
+		
+				<div id="panel6_character_b" class="character" typeof="Layer" resource="#layer42">
+					<span class="metadata" property="has" resource="#character_frank"></span>
+					<img src="page1/panel6/panel6_character2.png" alt="character_b image" onclick="showBalloonLayers('#panel6')"/>
+				</div>
+
+				<div id="panel6_balloon_a" class="balloon" typeof="Layer" resource="#layer43">
+					<span class="metadata" property="has" resource="#balloon6_a"></span>
+					<img src="page1/panel6/panel6_balloon1.png" alt="balloon_a image" onclick="showTextLayers('#panel6')"/>
+				</div>
+		
+				<div id="panel6_text_a" class="text_container" onclick="completePageRead(event)" typeof="Layer" resource="#layer44">
+					<span class="metadata" property="has" resource="#panel6_text_a_obj"></span>
+					
+					<div id="panel6_text_a_obj" class="text_obj" typeof="Text" resource="#panel6_text_a_obj">
+						<span class="metadata" property="isSaidThrough" resource="#balloon6_a"></span>
+						<span id="panel6_text_a_nl" property="says" xml:lang="nl">Van waar kom jij nu?</span>
+						<span id="panel6_text_a_en" property="says" xml:lang="en">Where do you come from?</span>
+					</div>
+				</div>
+			</div>
+
+        </div>
+        <script>
+			var firstPanel = '#panel1';
+			var lastPanel = '#panel6';
+			nextPanels['#panel1'] = '#panel2';
+			nextPanels['#panel2'] = '#panel3';
+			nextPanels['#panel3'] = '#panel4';
+			nextPanels['#panel4'] = '#panel5';
+			nextPanels['#panel5'] = '#panel6';
+			audioPanels['#panel3'] = "panel3_audio_1";
+			
+			window.onload=start;
+    	</script>
+    </body>
+</html>
