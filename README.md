@@ -39,4 +39,4 @@ The people involved are:
 
 We chose to make comicreader.js open source under GPL Version 3 license because we believe this will lead it to its full potential, and be of much more value to the Electronic Publishing community.
 
-So in short, you are free to use and modify Comicreader.js for non-commercial purposes, as long as you make your stuff open source as well and you properly credit us. This is most conveniently done by linking back to this repository.
+So in short, you are free to use and modify comicreader.js for non-commercial purposes, as long as you make your stuff open source as well and you properly credit us. This is most conveniently done by linking back to this repository.
